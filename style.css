@@ -14,17 +14,44 @@ html{
 
 /* Colors */
 :root{
-    -bg-primary: #ecf0f1;
-    -text: #16191a;
-    -hover-bg: #192a56;
-    -hover-text-color: #f5f6fa;
-    -button: #01ac89;
-    -share-icon: #4cd137;
-    -rating: #01ac89;
-    -active-off: #d63031;
-    -active-on: #009432;
-    -trophy: #01ac89;
-    -header-footer-color: #222f3e;
-    -underline: #576574;
-    -header-footer-icon: #8395a7;
+    --bg-primary: #ecf0f1;
+    --text: #16191a;
+    --hover-bg: #192a56;
+    --hover-text-color: #f5f6fa;
+    --button: #01ac89;
+    --share-icon: #4cd137;
+    --rating: #01ac89;
+    --active-off: #d63031;
+    --active-on: #009432;
+    --trophy: #01ac89;
+    --header-footer-color: #222f3e;
+    --underline: #576574;
+    --header-footer-icon: #8395a7;
+}
+
+/* Sizes */
+:root{
+    --header-footer-size: 5rem;
+    --sidebar: 30rem;
+}
+
+.header{
+    background-color: var(--header-footer-color);
+    height: var(--header-footer-size);
+    text-align: center;
+    padding-top: 10px;
+    color: var(--hover-text-color);
+}
+
+footer{
+    height: var(--header-footer-size);
+    background-color: var(--header-footer-color);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: var(--hover-text-color);
+    font-size: 2rem;
+    padding-top: 10px;
 }
