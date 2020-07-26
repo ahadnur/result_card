@@ -11,12 +11,19 @@ html{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 
 /* Colors */
 :root{
     --bg-primary: #ecf0f1;
     --text: #16191a;
-    --hover-bg: #192a56;
+    --hover: #81ecec;
+    --sidebar-border: #1abc9c;
     --hover-text-color: #f5f6fa;
     --button: #01ac89;
     --share-icon: #4cd137;
@@ -35,23 +42,45 @@ html{
     --sidebar: 30rem;
 }
 
-.header{
-    background-color: var(--header-footer-color);
-    height: var(--header-footer-size);
-    text-align: center;
-    padding-top: 10px;
-    color: var(--hover-text-color);
-}
-
-footer{
-    height: var(--header-footer-size);
-    background-color: var(--header-footer-color);
-    position: absolute;
-    width: 100%;
+/* Sidebar */
+.sidebar{
+    background-color: #dfe6e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
     left: 0;
-    bottom: 0;
+    width: 35rem;
+    height: 100vh;
+    z-index: 2000;
+}
+.sidebar__text{
     text-align: center;
-    color: var(--hover-text-color);
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--sidebar-border);
+}
+.nav__item{
+    position: relative;
+}
+.nav__item::before{
+    content: "";
+    position: absolute;
+
+}
+.nav__link{
+    display: block;
     font-size: 2rem;
-    padding-top: 10px;
+    font-weight: 500;
+    text-align: start;
+    color: var(--text);
+    padding: 2rem 2rem;
+    border-bottom: 1px solid var(--sidebar-border);
+}
+.nav__link:hover{
+    color: var(--header-footer-color);
+    background-color: var(--sidebar-border);
+    transition: .6s ease-in-out;
 }
