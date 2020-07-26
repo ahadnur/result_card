@@ -17,6 +17,9 @@ a{
 ul{
     list-style: none;
 }
+::placeholder{
+    margin-left: 2rem;
+}
 
 /* Colors */
 :root{
@@ -34,6 +37,12 @@ ul{
     --header-footer-color: #222f3e;
     --underline: #576574;
     --header-footer-icon: #8395a7;
+    --header-footer-text-color: #ecf0f1;
+}
+
+/* Header footer font size */
+:root{
+    --header-footer-font-size: 1.8rem;
 }
 
 /* Sidebar */
@@ -45,7 +54,7 @@ ul{
     left: 0;
     width: 30rem;
     height: 100vh;
-    z-index: 2000;
+    z-index: -1;
 }
 .sidebar__text{
     text-align: center;
@@ -77,4 +86,86 @@ ul{
     color: var(--header-footer-color);
     background-color: var(--sidebar-border);
     transition: .6s ease-in-out;
+}
+
+/* Main section */
+.whole__content{
+    margin-left: 30rem;
+}
+.header{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--header-footer-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.pages{
+    font-size: var(--header-footer-font-size);
+    color: var(--header-footer-text-color);
+}
+.pages i{
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.price__box{
+    color: var(--header-footer-text-color);
+}
+.lbl{
+    font-size: var(--header-footer-font-size);
+    margin-right: .5rem;
+}
+.selection__form{
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    height: 2.5rem;
+    font-size: var(--header-footer-font-size);
+    background-color: var(--header-footer-text-color);
+}
+.opt{
+    border: none;
+    outline: none;
+    font-size: var(--header-footer-font-size);
+    color: var(--header-footer-color);
+}
+.bars, 
+.four__square{
+    color: var(--header-footer-text-color);
+    font-size: var(--header-footer-font-size);
+}
+.filter__form input{
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    height: 2.5rem;
+    font-size: var(--header-footer-font-size);
+    background-color: var(--header-footer-text-color);
+}
+.search__box{
+    position: relative;
+    padding: .2rem 1rem;
+    margin: 0 1rem;
+    background: var(--header-footer-text-color);
+    width: 20rem;
+    height: 2.5rem;
+}
+.input{
+    height: 2rem;
+    margin: 0;
+    padding-right: 3rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.search__box i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: var(--header-footer-font-size);
+    color: var(--header-footer-color);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: .4rem .5rem;
+    cursor: pointer;
 }

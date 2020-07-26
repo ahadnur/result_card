@@ -11,46 +11,81 @@
 </head>
 <body>
 
-    <nav class="sidebar">
-        <div class="sidebar__text">
-            Catagory
+    <header>
+        <nav class="sidebar">
+            <div class="sidebar__text">
+                Catagory
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">All Hardware</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Audio Computers</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Soundgrid Servers</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Computer Servers</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Soundgrid Connect Combos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">All Soundgrid Interface</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Soundgrid Interfaces for Live Sound</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Soundgrid Interfaces for the Studio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">eMotion LV1 Live Mixer Combos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">DiGiGrid Interfaces</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">DiGiGrid Specials</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section starts here -->
+    <main>
+        <div class="whole__content">
+            <div class="header">
+                <div class="pages">
+                    Page 1 of 1 <i class="fas fa-arrow-alt-circle-left"></i><i class="fas fa-arrow-alt-circle-right"></i>
+                </div>
+                <div class="price__box">
+                    <label class="lbl" for="price">Price:</label>
+                    <select class="selection__form" name="price" id="price">
+                        <option class="opt" value="low to hight">Low to High</option>
+                        <option class="opt" value="high to low">High to Low</option>
+                    </select>
+                </div>
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="four__square">
+                    <i class="fas fa-th-large"></i>
+                </div>
+                <div class="filter__form">
+                    <input type="text" id="filter" placeholder="Filter">
+                </div>
+                <div class="search__box">
+                    <form action="#">
+                        <input type="text" class="input" value>
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
         </div>
-        <ul class="nav__list">
-            <li class="nav__item">
-                <a href="#" class="nav__link">All Hardware</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Audio Computers</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Soundgrid Servers</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Computer Servers</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Soundgrid Connect Combos</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">All Soundgrid Interface</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Soundgrid Interfaces for Live Sound</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Soundgrid Interfaces for the Studio</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">eMotion LV1 Live Mixer Combos</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">DiGiGrid Interfaces</a>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">DiGiGrid Specials</a>
-            </li>
-        </ul>
-    </nav>
+    </main>
     <!-- Custom Javascript -->
     <script src="./main.js"></script>
 </body>
