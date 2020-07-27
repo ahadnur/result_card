@@ -210,8 +210,8 @@ ul{
 .page__no{
     margin: 0 .7rem;
     border: .1rem solid var(--header-footer-icon);
-    padding: 0 .7rem;
-    border-radius: .5rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
 }
 
 /* Card area */
