@@ -52,7 +52,7 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
-    width: 30rem;
+    width: 29rem;
     height: 100vh;
     z-index: 2000;
     /* z-index: -1; */
@@ -220,7 +220,6 @@ ul{
     justify-content: center;
     align-items: center;
     min-height: 100vh - 10rem;
-    
 }
 .card__items{
     margin: 6rem auto;
@@ -235,5 +234,4 @@ ul{
     height: 30rem;
     width: 25rem;
     background: blueviolet;
-    /* margin-left: 1rem; */
 }
