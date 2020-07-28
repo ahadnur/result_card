@@ -54,7 +54,7 @@ ul{
     left: 0;
     width: 29rem;
     height: 100vh;
-    z-index: 2000;
+    z-index: 1000;
     /* display: none; */
 }
 .sidebar__text{
@@ -104,6 +104,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    z-index: 1000;
 }
 .pages{
     font-size: var(--header-footer-font-size);
@@ -115,7 +116,7 @@ ul{
 .pages i{
     margin: 0 .8rem;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .price__box{
     color: var(--header-footer-text-color);
@@ -209,7 +210,7 @@ ul{
 .page__count i{
     margin: 0 .5rem;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 .page__no{
     margin: 0 .7rem;
@@ -263,8 +264,28 @@ ul{
     border-radius: 5rem;
 }
 .user__name{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: .5rem;
+}
+.name__place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5rem;
+}
+.user__place{
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+.race__name__year{
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+.race__name{
+    margin-right: .5rem;
 }
 .trophy__quantity{
     display: flex;
@@ -285,7 +306,6 @@ ul{
 .flag__status i{
     font-size: 1.3rem;
     margin-right: .8rem;
-    margin-left: 3.5rem;
     color: var(--active-off);
 }
 .card__content{
@@ -330,16 +350,23 @@ ul{
     padding: .5rem;
 }
 .more__button{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--bg-primary);
     background: var(--color-primary);
     padding: .5rem 1.2rem;
     border-radius: .5rem;
 
 }
-.shares{
-    font-size: 1.2rem;
-    font-weight: 600;
+.like__sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.like__sec i{
+    font-size: 2rem;
+    margin-right: .5rem;
+    color: red;
 }
 .rating__star{
     color: var(--color-primary);
