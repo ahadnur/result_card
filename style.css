@@ -23,16 +23,15 @@ ul{
 
 /* Colors */
 :root{
+    --color-primary: #e67e22;
     --bg-primary: #ecf0f1;
     --text: #16191a;
     --hover: #81ecec;
-    --sidebar-border: #1abc9c;
     --hover-text-color: #f5f6fa;
-    --button: #01ac89;
     --share-icon: #4cd137;
     --rating: #01ac89;
     --active-off: #d63031;
-    --active-on: #009432;
+    --active-on: #4cd137;
     --trophy: #01ac89;
     --header-footer-color: #222f3e;
     --underline: #576574;
@@ -55,7 +54,6 @@ ul{
     width: 29rem;
     height: 100vh;
     z-index: 2000;
-    /* z-index: -1; */
     /* display: none; */
 }
 .sidebar__text{
@@ -104,7 +102,6 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    /* display: none; */
 }
 .pages{
     font-size: var(--header-footer-font-size);
@@ -220,18 +217,123 @@ ul{
     justify-content: center;
     align-items: center;
     min-height: 100vh - 10rem;
+    background-color: #dfe6e9;
 }
-.card__items{
+.cards{
     margin: 6rem auto;
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.3rem;
     box-sizing: border-box;
 }
 .card__item{
-    height: 30rem;
-    width: 25rem;
-    background: blueviolet;
+    max-height: 30rem;
+    max-width: 25rem;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: box-shadow .6s;
+}
+.card__item:hover{
+    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.7);
+}
+
+/* Card inner design */
+.card__header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem .5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.profile__img{
+    padding: .5rem;
+    margin-top: .5rem;
+    border: 2px solid rgb(24, 13, 54);
+    border-radius: 5rem;
+}
+.user__name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.trophy__quantity{
+    display: flex;
+    align-items: center;
+}
+.trophy{
+    margin-right: 1rem;
+    width: 2rem;
+}
+.quantity{
+    width: 2.3rem;
+}
+.flag__status{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+.flag__status i{
+    font-size: 1.3rem;
+    margin-right: .8rem;
+    margin-left: 3.5rem;
+    color: var(--active-off);
+}
+.card__content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 2rem 1rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+.card__content .right{
+    text-align: right;
+}
+
+.club__flag__name{
+    display: flex;
+    justify-content: center;
+}
+.club__flag__name img{
+    margin-right: .5rem;
+}
+.card__footer{
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.icons{
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+}
+.share{
+    color: var(--share-icon);
+}
+.square{
+    color: var(--color-primary);
+}
+.card__footer__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.more__button{
+    font-size: 1.3rem;
+    color: var(--bg-primary);
+    background: var(--color-primary);
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+
+}
+.shares{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.rating__star{
+    color: var(--color-primary);
+    font-size: 1.5rem;
 }
