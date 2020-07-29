@@ -38,6 +38,7 @@ ul{
     --underline: #576574;
     --header-footer-icon: #8395a7;
     --header-footer-text-color: #ecf0f1;
+    --color-danger: #FF0202;
 }
 
 /* Header footer font size */
@@ -55,7 +56,6 @@ ul{
     width: 29rem;
     height: 100vh;
     z-index: 1000;
-    /* display: none; */
 }
 .sidebar__text{
     text-align: center;
@@ -221,6 +221,7 @@ ul{
 
 /* Card area */
 .card__area{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -371,4 +372,56 @@ ul{
 .rating__star{
     color: var(--color-primary);
     font-size: 1.5rem;
+}
+.close__button{
+    background-color: var(--color-danger);
+    font-size: 1.5rem;
+    color: var(--bg-primary);
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+}
+.close-btn{
+    margin-right: .5rem;
+}
+#popup{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    padding: 5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+    transition: 0.5s;
+    z-index: 3000;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 1);
+}
+#popup .card__header .name__place .user__name{
+    font-size: 3rem;
+    font-weight: 600;
+}
+#popup .card__header .race__name__year{
+    font-size: 1.7rem;
+}
+#popup .card__footer .icons{
+    font-size: 4rem;
+}
+#popup .flag__status i{
+    font-size: 2rem;
+}
+#popup .flag__status img{
+    width: 5rem;
+}
+#popup .card__footer .card__footer__main .rating__star{
+    font-size: 2.2rem;
+}
+#popup .card__footer .card__footer__main .like__sec{
+    font-size: 1.9rem;
+    font-weight: 500;
 }
