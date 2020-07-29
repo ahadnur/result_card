@@ -479,6 +479,19 @@ ul{
     .card__item{
         padding: 1rem;
     }
+    .card__item#popup{
+        padding: 2rem;
+    }
+    #popup .card__footer .icons{
+        font-size: 2.5rem;
+    }
+    #popup .card__footer .card__footer__main .rating__star{
+        font-size: 1.7rem;
+    }
+    #popup .card__footer__main .close__button,
+    #popup .card__footer__main .more__button{
+        font-size: 1.7rem;
+    }
     .card__item,
     .card__item#popup{
         width: 100%;
