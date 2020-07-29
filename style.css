@@ -478,6 +478,9 @@ ul{
     }
     .card__item{
         padding: 1rem;
+    }
+    .card__item,
+    .card__item#popup{
         width: 100%;
         min-height: 3rem;
     }
