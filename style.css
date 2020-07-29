@@ -182,6 +182,11 @@ ul{
     padding: .4rem .5rem;
     cursor: pointer;
 }
+.toggle__btn{
+    color: var(--bg-primary);
+    font-size: 2rem;
+    display: none;
+}
 
 /* Footer area */
 .footer{
@@ -220,13 +225,13 @@ ul{
 }
 
 /* Card area */
-.card__area{
+.cards__area{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh - 10rem;
-    background-color: #dfe6e9;
+    /* background-color: #dfe6e9; */
 }
 .cards{
     margin: 6rem auto;
@@ -424,4 +429,70 @@ ul{
 #popup .card__footer .card__footer__main .like__sec{
     font-size: 1.9rem;
     font-weight: 500;
+}
+
+/* Media Queries */
+@media screen and (max-width:669px){
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .pages,
+    .header .price__box,
+    .header .bars,
+    .header .four__square,
+    .header .filter__form,
+    .header .search__box{
+        display: none;
+    }
+    .header .toggle__btn{
+        display: block;
+        margin-right: 2rem;
+    }
+    .sidebar{
+        left: -30rem;
+    }
+    .sidebar .sidebar__text{
+        font-size: 1.4rem;
+        color: #ffffff;
+    }
+    .sidebar .nav__link{
+        font-size: 1.3rem;
+    }
+    .whole__content{
+        margin: 0;
+    }
+    .sidebar.active{
+        top: 5rem;
+        left: 0;
+        transition: left 0.6s ease;
+    }
+    .footer{
+        display: none;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card__item{
+        padding: 1rem;
+        width: 100%;
+        min-height: 3rem;
+    }
+    .card__item#popup .card__content{
+        display: flex;
+    }
+    .card__content{
+        display: none;
+    }
+    .card__header{
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .card__footer{
+        border-top: none;
+        margin-top: 0;
+    }
 }
