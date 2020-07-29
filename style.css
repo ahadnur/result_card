@@ -476,6 +476,7 @@ ul{
     .cards{
         display: flex;
         flex-direction: column;
+        margin-bottom: 1rem;
     }
     .card__item{
         padding: 1rem;
