@@ -695,7 +695,6 @@ input[type=text]{
     }
     .header .search__box__res{
         display: block;
-        margin-left: 2rem;
         width: 35%;
     }
     .input[type=text]{
@@ -712,21 +711,14 @@ input[type=text]{
     }
     .range{
         display: block;
-        width: 100%;
+        width: 60%;
     }
     .slider2{
-        margin-left: 5rem;
-    }
-    .slider1{
-        width: 100%;
-    }
-    .slider2{
-        width: 100%;
+        margin-left: 2rem;
     }
     .header .toggle__btn{
         display: block;
         font-size: 3rem;
-        margin-right: 2rem;
     }
     .sidebar{
         top: 5rem;
