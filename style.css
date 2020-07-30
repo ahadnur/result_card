@@ -649,6 +649,7 @@ input[type=text]{
         min-height: 3rem;
     }
     .card__item#popup{
+        padding-top: 18rem;
         width: 100%;
         height: 100vh;
     }
