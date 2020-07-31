@@ -24,3 +24,10 @@ var closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', ()=>{
     form.classList.remove('active')
 })
+
+// filer
+var filter = document.getElementById('filter');
+var catagory = document.getElementById('catagory');
+filter.addEventListener('click', ()=>{
+    catagory.classList.toggle('active');
+})

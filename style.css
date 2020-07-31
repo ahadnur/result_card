@@ -555,6 +555,50 @@ input[type=text]{
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
 }
+.sub__menu{
+    position: absolute;
+}
+.catagory{
+    position: relative;
+    top: 5rem;
+    left: 65rem;
+    height: 30rem;
+    width: 25rem;
+    background-color: #ffffff;
+    display: block;
+    box-shadow: 0 1.5rem 5rem #757575;
+    z-index: 200000;
+    display: none;
+}
+.sub__catagory__1{
+    background-color: #757575;
+    padding: 2rem;
+}
+.sub__catagory__1 label{
+    color: var(--hover-text-color);
+}
+.catagory.active{
+    display: block;
+}
+.catagory input[type=checkbox]{
+    margin-right: 1rem;
+}
+.sub__catagory__2{
+    padding: 2rem;
+}
+.sub__catagory__3{
+    background-color: #757575;
+    padding: 2rem;
+}
+.sub__catagory__3 label{
+    color: var(--hover-text-color);
+}
+.catagory label{
+    font-size: 1.6rem;
+}
+.sub__catagory{
+    margin-left: 2rem;
+}
 
 /* Media Queries */
 @media screen and (max-width:669px){
