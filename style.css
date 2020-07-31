@@ -187,10 +187,16 @@ input[type=text]{
     display: none;
 }
 .ranges{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: none;
+}
+.range{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.range p{
+    color: var(--hover-text-color);
 }
 .ranges .slider1{
     height: .7rem;
@@ -561,9 +567,9 @@ input[type=text]{
 .catagory{
     position: relative;
     top: 5rem;
-    left: 65rem;
+    left: 66.5rem;
     height: 30rem;
-    width: 25rem;
+    width: 23rem;
     background-color: #ffffff;
     display: block;
     box-shadow: 0 1.5rem 5rem #757575;
@@ -633,14 +639,24 @@ input[type=text]{
         align-items: center;
     }
     .range{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .range p{
+        margin-right: 1rem;
+        font-size: 1.7rem;
+    }
+    .range .filter{
+        margin-left: 1.5rem;
     }
     .slider1,
     .slider2{
-        width: 80%;
+        width: 60%;
     }
     .header .toggle__btn{
         display: block;
+        margin-left: 1rem;
     }
     .sidebar{
         top: 5rem;
@@ -754,11 +770,19 @@ input[type=text]{
         align-items: center;
     }
     .range{
-        display: block;
-        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .range p{
+        margin-right: 1rem;
+        font-size: 1.7rem;
+    }
+    .range .filter{
+        margin-left: 2rem;
     }
     .slider2{
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     .header .toggle__btn{
         display: block;
