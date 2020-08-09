@@ -426,6 +426,7 @@ input[type=text]{
     color: var(--color-primary);
     font-size: 1.5rem;
 }
+/* Second footer of color palatte, comment, talkback and checkbox */
 .second__footer{
     display: flex;
     justify-content: space-between;
@@ -444,6 +445,7 @@ input[type=text]{
     font-size: 2.5rem;
     color: #4cd137;
 }
+/* End of Second footer of color palatte, comment, talkback and checkbox */
 .close__button{
     background-color: var(--color-danger);
     font-size: 1.5rem;
