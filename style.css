@@ -426,6 +426,24 @@ input[type=text]{
     color: var(--color-primary);
     font-size: 1.5rem;
 }
+.second__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.second__footer .input{
+    font-size: 1.5rem;
+}
+.second__footer .input .check{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+}
+.comment i{
+    font-size: 2.5rem;
+    color: #4cd137;
+}
 .close__button{
     background-color: var(--color-danger);
     font-size: 1.5rem;
@@ -444,11 +462,13 @@ input[type=text]{
     width: 60rem;
     padding: 5rem;
     visibility: hidden;
+    background: #fff;
     opacity: 0;
     transition: 0.5s;
 }
 #popup.active{
     visibility: visible;
+    
     opacity: 1;
     top: 50%;
     transition: 0.5s;

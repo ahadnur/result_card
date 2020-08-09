@@ -31,3 +31,42 @@ var catagory = document.getElementById('catagory');
 filter.addEventListener('click', ()=>{
     catagory.classList.toggle('active');
 })
+
+// Color Picker
+// Simple example, see optional options for more configuration.
+const pickr = Pickr.create({
+    el: '.color-picker',
+    theme: 'classic',
+    default: '#ff3838',
+
+    swatches: [
+        '#55efc4',
+        '#81ecec',
+        '#b2bec3',
+        '#dfe6e9',
+        '#7f8fa6',
+        '#33d9b2'
+
+    ],
+
+    components: {
+
+        // Main components
+        preview: true,
+        opacity: true,
+        hue: true,
+
+        // Input / output Options
+        interaction: {
+            hex: true,
+            rgba: true,
+            input: true
+        }
+    }
+});
+
+pickr.on('change', (color, instance) => {
+    const rgbaColor = color.toRGBA().toString();
+    document.querySelector('.card__item').style.background = rgbaColor;
+    document.getElementById('popup').style.background = rgbaColor;
+});
