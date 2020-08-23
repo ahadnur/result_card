@@ -40,13 +40,11 @@ const pickr = Pickr.create({
     default: '#ff3838',
 
     swatches: [
-        '#55efc4',
-        '#81ecec',
-        '#b2bec3',
-        '#dfe6e9',
-        '#7f8fa6',
-        '#33d9b2'
-
+        '#FF5733',
+        '#20B100',
+        '#0020B1',
+        '#FEE701',
+        '#ffffff'
     ],
 
     components: {
