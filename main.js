@@ -25,11 +25,11 @@ closeBtn.addEventListener('click', ()=>{
     form.classList.remove('active')
 })
 
-// filer
-var filter = document.getElementById('filter');
-var catagory = document.getElementById('catagory');
-filter.addEventListener('click', ()=>{
-    catagory.classList.toggle('active');
+// Sub Menu
+var subNavContent = document.querySelector('.subnav-content');
+var subMenuBtn = document.getElementById('sub__menu');
+subMenuBtn.addEventListener('click', ()=>{
+    subNavContent.classList.toggle('active')
 })
 
 // Color Picker

@@ -54,9 +54,11 @@ ul{
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 29rem;
-    height: 100vh;
+    min-height: 100vh;
     z-index: 1000;
+    overflow-y: scroll;
 }
 .sidebar__text{
     text-align: center;
@@ -90,7 +92,31 @@ ul{
     background-color: #130f40;
     transition: .6s ease-in-out;
 }
-
+.subnav {
+    overflow: hidden;
+}
+.subnav .nav__item {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+.subnav .subnav-content.active {
+    display: block;
+}
 /* Main section */
 .whole__content{
     margin-left: 30rem;
