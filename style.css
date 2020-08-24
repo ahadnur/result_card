@@ -266,6 +266,9 @@ input[type=text]{
     font-size: 2rem;
     display: none;
 }
+#chtd i{
+    margin: 0 10px;
+}
 
 /* Footer area */
 .footer{
@@ -390,7 +393,7 @@ input[type=text]{
 }
 .flag__status i{
     font-size: 1.3rem;
-    margin-right: .8rem;
+    margin: 0 .8rem;
     color: var(--active-off);
 }
 .card__content{
