@@ -57,20 +57,24 @@ const pickr = Pickr.create({
 
         // Main components
         preview: true,
-        opacity: true,
-        hue: true,
+        // opacity: true,
+        // hue: true,
 
         // Input / output Options
         interaction: {
             hex: true,
             rgba: true,
-            input: true
+            input: true,
+            save: true
         }
     }
 });
 
+var cardItems = document.querySelectorAll('.card__item');
 pickr.on('change', (color, instance) => {
-    const rgbaColor = color.toRGBA().toString();
-    document.querySelector('.card__item').style.background = rgbaColor;
+    var rgbaColor = color.toRGBA().toString();
+    cardItems.forEach(element => {
+        element.style.background = rgbaColor;
+    });
     document.getElementById('popup').style.background = rgbaColor;
 });

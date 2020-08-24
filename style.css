@@ -92,6 +92,26 @@ ul{
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #d6d6d6;
 }
+.nav__item.color__picker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color__picker{
+    margin-right: 1rem;
+}
+.pcr-app.visible{
+    height: 150px;
+    width: 300px;
+    top: 0 !important;
+    left: 0 !important;
+}
+.pcr-swatches.pcr-last button{
+    margin: 0 10px !important;
+}
+.nav__item:nth-child(12){
+    border: none;
+}
 .nav__link:hover{
     color: var(--header-footer-text-color);
     background-color: #130f40;
