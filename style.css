@@ -47,6 +47,11 @@ ul{
     --header-footer-font-size: 1.8rem;
 }
 
+/* total content */
+.total__content.rtl{
+    direction: rtl;
+}
+
 /* Sidebar */
 .sidebar{
     background-color: #757575;

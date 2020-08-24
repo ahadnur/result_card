@@ -22,14 +22,20 @@ chatBtn.addEventListener('click', ()=>{
 })
 var closeBtn = document.querySelector('.close');
 closeBtn.addEventListener('click', ()=>{
-    form.classList.remove('active')
+    form.classList.remove('active');
 })
 
+// Change text decoration
+var changeTextDecBtn = document.getElementById('chtd');
+var wholeContent = document.querySelector('.total__content');
+changeTextDecBtn.addEventListener('click', ()=>{
+    wholeContent.classList.toggle('rtl');
+})
 // Sub Menu
 var subNavContent = document.querySelector('.subnav-content');
 var subMenuBtn = document.getElementById('sub__menu');
 subMenuBtn.addEventListener('click', ()=>{
-    subNavContent.classList.toggle('active')
+    subNavContent.classList.toggle('active');
 })
 
 // Color Picker
