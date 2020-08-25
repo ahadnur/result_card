@@ -442,14 +442,20 @@ input[type=text]{
     margin-top: 2rem;
 }
 .icons{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     font-size: 2.5rem;
     padding: 0 .5rem;
+    margin: 1rem 0;
+}
+.icons input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 0 1rem;
 }
 .share{
     color: var(--share-icon);
-}
-.square{
-    color: var(--color-primary);
 }
 .card__footer__main{
     display: flex;
