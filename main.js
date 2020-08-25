@@ -70,11 +70,9 @@ const pickr = Pickr.create({
     }
 });
 
-var cardItems = document.querySelectorAll('.card__item');
+var cardColor = document.querySelectorAll('.fa.fa-circle');
 pickr.on('change', (color, instance) => {
     var rgbaColor = color.toRGBA().toString();
-    cardItems.forEach(element => {
-        element.style.background = rgbaColor;
-    });
-    document.getElementById('popup').style.background = rgbaColor;
+    cardColor.style.color = rgbaColor;
+    pickr.default = rgbaColor;
 });

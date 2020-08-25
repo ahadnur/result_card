@@ -103,8 +103,6 @@ ul{
 .pcr-app.visible{
     height: 150px;
     width: 300px;
-    top: 0 !important;
-    left: 0 !important;
 }
 .pcr-swatches.pcr-last button{
     margin: 0 10px !important;
@@ -416,6 +414,15 @@ input[type=text]{
     margin: 0 .8rem;
     color: var(--active-off);
 }
+.pickr .pcr-button{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 1rem;
+    outline: none;
+    border: none;
+    background: none !important;
+    border-radius: 50% !important;
+}
 .card__content{
     position: relative;
     display: flex;
@@ -546,6 +553,10 @@ input[type=text]{
 }
 #popup .card__footer .icons{
     font-size: 4rem;
+}
+#popup .card__footer .icons input{
+    height: 3.2rem;
+    width: 3.2rem;
 }
 #popup .flag__status i{
     font-size: 2rem;
