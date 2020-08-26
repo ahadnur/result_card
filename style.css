@@ -97,8 +97,8 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-.color__picker{
-    margin-right: 1rem;
+.nav__item.color__picker > div{
+    margin: 0 2rem;
 }
 .pcr-app.visible{
     height: 150px;
