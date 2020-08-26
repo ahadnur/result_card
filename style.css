@@ -142,6 +142,10 @@ ul{
 .subnav .subnav-content.active {
     display: block;
 }
+.check{
+    height: 2rem;
+    width: 2rem;
+}
 /* Main section */
 .whole__content{
     margin-left: 30rem;
@@ -541,6 +545,10 @@ input[type=text]{
 #popup .card__footer .icons{
     font-size: 4rem;
 }
+#popup .card__footer .icons .check{
+    height: 3.2rem;
+    width: 3.2rem;
+}
 #popup .flag__status i{
     font-size: 2rem;
 }
@@ -693,14 +701,15 @@ input[type=text]{
     .header .pages,
     .header .price__box,
     .header .bars,
-    .header .four__square,
-    .header .filter__form,
-    .header .search__box{
+    .header .four__square{
         display: none;
     }
-    .header .search__box__res{
+    .header .search__box__res,
+    .header .filter__form,
+    .header .search__box{
         display: block;
         margin-right: 2rem;
+        width: calc(100% - 75%);
     }
     .input[type=text]{
         padding: 0 1rem;
@@ -708,27 +717,6 @@ input[type=text]{
         background-color: rgba(255, 255, 255, 0.92);
         color: rgb(24, 13, 54);
         font-weight: 500;
-    }
-    .header .ranges{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .range{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .range p{
-        margin-right: 1rem;
-        font-size: 1.7rem;
-    }
-    .range .filter{
-        margin-left: 1.5rem;
-    }
-    .slider1,
-    .slider2{
-        width: 60%;
     }
     .header .toggle__btn{
         display: block;
@@ -770,6 +758,10 @@ input[type=text]{
     }
     #popup .card__footer .icons{
         font-size: 2.5rem;
+    }
+    #popup .card__footer .icons .check{
+        height: 2.1rem;
+        width: 2.1rem;
     }
     #popup .card__footer .card__footer__main .rating__star{
         font-size: 1.7rem;
@@ -910,6 +902,10 @@ input[type=text]{
     }
     #popup .card__footer__main .more__button{
         display: none;
+    }
+    #popup .card__footer .icons .check{
+        height: 2rem;
+        width: 2rem;
     }
     .card__item{
         width: 100%;
